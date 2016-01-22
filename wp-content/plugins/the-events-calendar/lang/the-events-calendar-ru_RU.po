@@ -273,7 +273,7 @@ msgstr ""
 
 #: src/Tribe/Template/Day.php:136
 msgid "No %1$s scheduled for %2$s. Please try another day."
-msgstr ""
+msgstr "%1s на %2s не найдено."
 
 #: src/Tribe/Template/Month.php:281
 msgid "There were no results found for %s this month. Try searching next month."
@@ -1030,7 +1030,7 @@ msgstr "Вставить %s"
 #: src/functions/template-tags/loop.php:152
 #: src/functions/template-tags/loop.php:161
 msgid "%1$s for %2$s"
-msgstr ""
+msgstr "%1$s на %2$s"
 
 #: src/functions/template-tags/options.php:20
 msgid "Your current Events URL is %s"
