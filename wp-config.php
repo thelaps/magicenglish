@@ -29,7 +29,7 @@ define('DB_USER', 'vozniy');
 define('DB_PASSWORD', '7hRaZl');
 
 /** Имя сервера MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '35.162.228.219');
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8mb4');

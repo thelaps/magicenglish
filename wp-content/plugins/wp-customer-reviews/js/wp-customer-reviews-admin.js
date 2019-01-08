@@ -2,13 +2,13 @@
 	$(function() {
 		
 		// begin: post meta fields
-		var metabox = $('#wpcr3-meta-box');
+		var metabox = jQuery('#wpcr3-meta-box');
 		
 		if (metabox.length) {
 			var jqfields = metabox.find('input,select,textarea');
 			var fields = {};
 			jqfields.each(function(i,v){
-				v = $(v), id = v.attr('id');
+				v = jQuery(v), id = v.attr('id');
 				fields[id] = v;
 			});
 			
@@ -26,12 +26,12 @@
 			};
 			
 			fields.wpcr3_format.change(function(){
-				var t = $(this);
+				var t = jQuery(this);
 				toggleTypeFields(t.val());
 			}).change();
 			
 			fields.wpcr3_enable.change(function(){
-				var t = $(this), checked = t.is(":checked");
+				var t = jQuery(this), checked = t.is(":checked");
 				toggleAllFields(checked);
 				if (checked) {
 					fields.wpcr3_format.change();
@@ -41,16 +41,16 @@
 		// end: post meta fields
 	
 		// begin: plugin settings fields
-		var options = $('.wpcr3_myplugin_options');
+		var options = jQuery('.wpcr3_myplugin_options');
 		if (options.length) {
 			$('.setting_wpcr3_option_custom_fields input.need_pro').click(function(e){
 				e.preventDefault();
-				$(this).removeAttr('checked');
+				jQuery(this).removeAttr('checked');
 				alert('Rating custom fields is available in the pro version.');
 			});
 			
 			$('.table_multi_input_checkbox a.addmore').click(function(e){
-				e.preventDefault(); var t = $(this);
+				e.preventDefault(); var t = jQuery(this);
 				if (t.hasClass('need_pro')) {
 					alert('Additional custom fields are available in the pro version.');
 					return false;
